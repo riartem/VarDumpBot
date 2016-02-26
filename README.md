@@ -5,7 +5,8 @@ Simple connector for Telegram debug bot: [@var_dump_bot](https://telegram.me/var
 Bot supports all types of PHP variables, which can be serialized to JSON. See more information on the [official webpage](https://debug.tbot.me/).
 
 ---
-Currently we have only PHP library. 
+Currently we have only PHP library.
+
 NodeJS connector in roadmap (*if you want to help with development, create pull request*).
 
 ### Getting started with PHP library
