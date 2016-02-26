@@ -7,7 +7,7 @@ Bot supports all types of PHP variables, which can be serialized to JSON. See mo
 ---
 Currently we have only PHP library. NodeJS connector planned for development.
 
-# Sending commands directly
+### Sending commands directly
 
 Of course, you may not use that library for sending commands to bot. 
 You may send directly POST requests to our API endpoint: `https://debug.tbot.me/ping` with fields:
