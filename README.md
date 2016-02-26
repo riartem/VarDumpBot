@@ -7,8 +7,13 @@ Bot supports all types of PHP variables, which can be serialized to JSON. See mo
 ---
 Currently we have only PHP library. NodeJS connector planned for development.
 
-### Sending commands directly
+### Getting started with PHP library
+- Download the [latest version](https://github.com/riartem/var_dump_bot/releases)
+- Unpack and place to your project with other classes
+- Place secret.txt into folder where library located
+- (optional) if your project don't have autoload, don't forget to require. Example: `require_once "./lib/VarDumpBot.php";`
 
+### Sending commands directly
 Of course, you may not use that library for sending commands to bot. 
 You may send directly POST requests to our API endpoint: `https://debug.tbot.me/ping` with fields:
 
