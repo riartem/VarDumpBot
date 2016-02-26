@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Telegram @var_dump_bot connector
+ * https://github.com/riartem/var_dump_bot
+ */
 class VarDumpBot
 {
     protected static $project_key = '';
