@@ -15,7 +15,22 @@ NodeJS connector in roadmap (*if you want to help with development, create pull 
 - Place secret.txt into folder where library located
 - (optional) if your project don't have autoload, don't forget to require. Example: `require_once "./lib/VarDumpBot.php";`
 
-### Sending commands directly
+### Error and exception handlers
+You can use that bot library as handler for errors and exceptions. To enable that feature, include library in your project as described above and register handlers (or one):
+
+- set_error_handler(array('VarDumpBot', 'error_handler'), E_ALL);
+- set_exception_handler(array('VarDumpBot', 'exception_handler'));
+
+Also you can put an exception handler to try/catch blocks. Example:
+```
+try {
+    // your_code_here
+} catch(Exception $e){
+    VarDumpBot::exception_handler($e);
+}
+```
+
+### Sending info directly
 Of course, you may not use that library for sending commands to bot. 
 You may send directly POST requests to our API endpoint: `https://debug.tbot.me/ping` with fields:
 
